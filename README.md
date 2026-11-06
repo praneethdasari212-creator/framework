@@ -134,7 +134,7 @@ npm run allure:serve     # builds and opens the Allure report
 - **Least-privilege CI** - the workflow runs with `permissions: contents: read`; only the report-publish job elevates to `write`, using the built-in `GITHUB_TOKEN`.
 - **Dependency hygiene** - Dependabot opens weekly update PRs; GitHub secret scanning + push protection guard against accidental leaks.
 
-## Author
+## Author Praneeth Kumar Dasari
 
 **Your Full Name**
 

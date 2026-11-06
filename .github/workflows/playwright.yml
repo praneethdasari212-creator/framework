@@ -35,7 +35,7 @@ jobs:
     name: Lint & type-check
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -61,7 +61,7 @@ jobs:
               || fromJSON('["chromium","firefox","webkit"]') }}
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-node@v4
         with:
@@ -115,7 +115,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-node@v4
         with:
@@ -141,7 +141,7 @@ jobs:
       # First run: the gh-pages branch does not exist yet, so this is allowed
       # to fail without stopping the job.
       - name: Restore trend history from gh-pages
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         continue-on-error: true
         with:
           ref: gh-pages
